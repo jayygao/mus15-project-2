@@ -1,0 +1,1 @@
+# Second simple project for MUS15, using OpenAI to provide the user with music recommendation based on whatever prompts the user submits.
