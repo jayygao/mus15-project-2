@@ -13,6 +13,7 @@ export default function MainPage() {
     e.preventDefault();
 
     const formattedPrompt = `Recommend me music from: ${prompt} and also suggest some similar music`;
+    setResponse("Thinking...")
 
     axios
       .post(`${HTTP}`, { prompt: formattedPrompt })
@@ -50,7 +51,7 @@ export default function MainPage() {
       </form>
       <div className="bg-darkGreen  mt-2 p-1 border-5">
         <p className="text-light" style={{ whiteSpace: 'pre-line' }}>
-          {response ? response : "Tell me anything... \n"}
+          {response ? response : prompt ? "What are you feeling?" : "Tell me anything... \n"}
         </p>
       </div>
     </div>
