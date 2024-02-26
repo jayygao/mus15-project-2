@@ -1,7 +1,7 @@
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-    apiKey: "TESTER"
+    apiKey: "TESTERKEY"
 });
 
 const express = require("express");
